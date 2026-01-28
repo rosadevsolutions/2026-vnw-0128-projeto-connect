@@ -1,4 +1,5 @@
 
+
 const PaginaInicial = () => {
   return (
     <main>
@@ -7,4 +8,4 @@ const PaginaInicial = () => {
   )
 }
 
-export default PaginaInicial;
+export default PaginaInicial
