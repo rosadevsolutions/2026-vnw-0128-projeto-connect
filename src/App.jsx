@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
 import "./globalStyles.scss";
 import Doacao from "./pages/doacao/Doacao";
 import EventosEP from "./pages/eventosEP/EventosEP";
@@ -10,6 +11,7 @@ import Voluntariado from "./pages/voluntariado/Voluntariado";
 const App = () => {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<PaginaInicial/>} />
         <Route path="/doacao" element={<Doacao/>}/>
