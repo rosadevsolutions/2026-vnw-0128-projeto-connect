@@ -1,9 +1,14 @@
 import { BrowserRouter, Routes } from "react-router-dom";
 import "./globalStyles.scss";
+import Doacao from "./pages/doacao/Doacao";
+import EventosEP from "./pages/eventosEP/EventosEP";
+import Mentoria from "./pages/mentoria/Mentoria";
+import PaginaInicial from "./pages/paginaInicial/PaginaInicial";
+import Usuario from "./pages/usuario/Usuario";
+import Voluntariado from "./pages/voluntariado/Voluntariado";
 
 const App = () => {
   return (
-    <main>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<PaginaInicial/>}/>
@@ -14,8 +19,7 @@ const App = () => {
           <Route path="/voluntariado" element={<Voluntariado/>}/>
         </Routes>
       </BrowserRouter>
-    </main>
   )
 }
 
-export default App;
+export default App
